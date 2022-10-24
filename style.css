@@ -1,0 +1,459 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* generall setting */
+html {
+    font-size: 62.5%;
+    --header1: calc(4rem + 1vw);
+    --header2: calc(3rem + 1vw);
+    --header3: calc(2.8rem + 1vw);
+    --header4: calc(1.5rem + 1vw);
+    --text: calc(1.4rem + 1vw);
+    --big: calc(7.5rem + 1vw);
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+}
+
+h1:first-letter,
+h3:first-letter,
+p::first-letter {
+    text-transform: capitalize;
+}
+
+ul,
+a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #737373;
+
+}
+
+.hero-img {
+    width: 100%;
+}
+
+h1 {
+    font-size: var(--header1);
+    color: #000;
+    line-height: 1.2;
+
+}
+
+h3 {
+    font-size: var(--header3);
+    color: #000;
+    line-height: 1.2;
+}
+
+p,
+article {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+p {
+    color: #000;
+    font-weight: 700;
+}
+
+article {
+    color: #737373;
+}
+
+/* .container {
+    width: 80%;
+    margin: auto;
+} */
+
+.sign {
+    background-color: #1da1f2;
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.tweet {
+    display: inline-block;
+}
+
+/* nav section */
+header {
+    height: 10vh;
+    padding: 3rem 0;
+    background-color: #fbf8f3;
+
+}
+
+.logo p {
+    color: #3180f5;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+
+}
+
+.logo {
+    width: 60%;
+}
+
+.nav-links {
+    width: 40%;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* hero setting */
+.hero {
+    height: 90vh;
+    background-color: #fbf8f3;
+    margin-bottom: 8rem;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding-top: 3rem;
+
+}
+
+.hero-text {
+    flex-basis: 45%;
+}
+
+.hero-img {
+    flex-basis: 40%;
+}
+
+.hero-body,
+.link {
+    margin: 1.5rem 0;
+}
+
+.arrow {
+    color: #1f7898;
+    font-weight: 600;
+    margin-left: 1.5rem;
+}
+
+.blue {
+    color: #1f7898;
+    font-weight: 600;
+}
+
+.avatar {
+    margin: 3rem 0;
+    position: relative;
+}
+
+
+.user {
+    color: #737373;
+    font-weight: 500;
+    margin: 8rem 0;
+}
+
+.user1,
+.user2,
+.user3,
+.user4,
+.user5,
+.user6,
+.user7,
+.user8,
+.user9 {
+    position: absolute;
+}
+
+.user2 {
+    left: 20px;
+}
+
+.user3 {
+    left: 40px;
+}
+
+.user4 {
+    left: 60px;
+}
+
+.user5 {
+    left: 80px;
+}
+
+.user6 {
+    left: 100px;
+}
+
+.user7 {
+    left: 120px;
+}
+
+.user8 {
+    left: 140px;
+}
+
+.user9 {
+    left: 160px;
+}
+
+/* features setting */
+
+.feature-section {
+    width: 70%;
+    margin: auto;
+    height: 75vh;
+}
+
+.feature-section h3 {
+    margin-bottom: 4rem;
+    width: 40%;
+}
+
+.card {
+    border: 1px solid #a2a2a2;
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+.feature-cards {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+
+}
+
+.card1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.card2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.card3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.card4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.head {
+    margin: 1rem 0;
+}
+
+/* customer setting */
+.customer {
+    background-color: #d7f5f5;
+    height: 65vh;
+}
+
+
+.customer-head h3 {
+    margin: 3rem 0;
+}
+
+.customer-container {
+    width: 70%;
+    margin: auto;
+    padding-top: 4rem;
+}
+
+.tweet-head {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.tweet-user {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #737373;
+}
+
+.tweets {
+    display: grid;
+    column-gap: 20px;
+    align-items: start;
+}
+
+.tweet1 {
+    grid-column: 1/2;
+    height: auto;
+}
+
+.tweet2 {
+    grid-column: 2/3;
+}
+
+.tweet3 {
+    grid-column: 3/4;
+}
+
+.likes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tweeet {
+    width: 400px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+
+
+.tweet-head .avatars {
+    width: 25%;
+}
+
+.user-name {
+    position: absolute;
+    left: 94px;
+}
+
+.blue-tweet {
+    position: absolute;
+    left: 90%;
+}
+
+.tweet-body article {
+    padding: 2rem 0;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: #737373;
+}
+
+.like-cont {
+    font-size: 1.8rem;
+    margin-left: .8rem;
+}
+
+.date p {
+    color: #737373;
+    font-weight: 400;
+}
+
+/* price section */
+.price {
+    width: 70%;
+    margin: auto;
+    height: 90vh;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.price-head {
+    padding: 2rem 0;
+
+}
+
+.price-p {
+    color: #737373;
+    font-weight: 400;
+    width: 45%;
+    margin: auto auto 4rem auto;
+}
+
+.price-card {
+    width: 42%;
+    padding: 4rem;
+    border: 1px solid #ffad23;
+    border-radius: 5px;
+    background-color: #fbf8f3;
+    text-align: left;
+}
+
+.price-card p {
+    color: #737373;
+    font-weight: 400;
+}
+
+.monthly {
+    font-size: 2.8rem;
+}
+
+.prices {
+    font-size: 5rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.terms {
+    border-top: 1px solid #73737357;
+    border-bottom: 1px solid #73737357;
+    margin-bottom: 1.2rem;
+    padding: 2rem 0;
+}
+
+.checkmark img {
+    padding-right: 1rem;
+
+}
+
+.checkmark {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+}
+
+.price-card .sign {
+    display: block;
+    text-align: center;
+}
+
+.price-card {
+    margin: auto;
+}
+
+/* footer */
+footer {
+    background-color: #d7f5f5;
+    padding: 2.5rem 0;
+}
+
+.footer {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.policy {
+    font-size: 2rem;
+
+}
+
+.policy a {
+    margin: 0 1rem;
+    color: #000;
+}
